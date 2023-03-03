@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icondiv{
+    display: flex;
+    align-items: center;
+}
+.nav-section{
+    display: flex;
+    justify-content: space-between;
+}
+.banner-section{
+    position: relative;
+}
+.banner-section> img{
+    border-radius: 0px 0px 80px 80px;
+}
+.text-banner{
+    position: absolute;
+    top:150px;
+    left:150px;
+}
+.aboutimg > img{
+    border-radius: 50px;
+}
