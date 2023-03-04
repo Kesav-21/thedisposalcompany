@@ -1,24 +1,62 @@
+/* General */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: antiquewhite;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn{
+    color: white;
+    background-color: orangered;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 15px;
+}
+
+ul{
+    list-style: none;
+}
+
+/* Header section */
 header{
-    background-color: aqua;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-.icondiv{
-    display: flex;
-    align-items: center;
+    padding: 15px;
+    background-color: white;
 }
 .nav-section{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    width: 40%;
+    
 }
+.nav-section >a {
+    padding: 10px;
+    color: black;
+    font-weight: 800;
+}
+/* Banner Section */
 .banner-section{
     position: relative;
+    color:white;
 }
 .banner-section> img{
     border-radius: 0px 0px 80px 80px;
@@ -27,7 +65,186 @@ header{
     position: absolute;
     top:150px;
     left:150px;
+    line-height: 1.8;
+}
+
+/* About Section */
+.about-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+#about1,#about2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 10%;
+    margin:50px;
+    line-height: 1.5;
+}
+.about-text{
+    width: 40%;
 }
 .aboutimg > img{
     border-radius: 50px;
 }
+
+/* How Section */
+.how-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 80px;
+}
+.how-inner-section{
+    display: flex;
+    width: 80%;
+    padding: 20px;
+    justify-content: space-between;
+    margin: 10px;
+}
+.how-card{
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+.how-img{
+    width: 150px;
+    height: 150px;
+    border-radius:20px;
+    margin-bottom: 15px;
+}
+.how-card > h4 {
+    margin-bottom: 15px;
+}
+
+/* Why section */
+.why-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(72, 209, 209);
+    padding: 50px;
+    color: white;
+}
+.why-inner-section{
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    text-align: center;
+}
+.why-card{
+    width: 18.75%;
+}
+
+.why-img{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
+/* Slide section */
+.slide-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(228, 224, 224);
+    padding: 50px;
+}
+.slide-inner-section{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    align-items: center;
+}
+
+.slide-card{
+    width: 25%;
+    border-radius: 15px;
+    border: solid rgb(72, 209, 209) 2px;
+    margin: 20px;
+}
+.slide-card > img{
+    border-radius: 15px 15px 0 0;
+}
+.slide-card > p{
+    padding: 15px;
+}
+
+/* Join section */
+.join-section{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+.join-section > p{
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    background-color:rgb(72, 209, 209);
+    color: white;
+    padding: 30px;
+}
+.footer-left{
+    justify-self: center;
+    width: 70%;
+    margin:0 auto;
+    line-height: 1.5;
+}
+
+.footer-right{
+    display: grid;
+    grid-template-rows: 50px 50px 50px;
+    padding: 10px 30px;
+    margin-top: 30px;
+    margin-right: 70px;
+    justify-self: center;
+}
+
+.footer-right>ul{
+    height: 50px;
+}
+
+.footer-links{
+    display: flex;
+    justify-self: end;
+}
+.footer-links>li{
+    margin-left:40px;
+}
+.footer-social{
+    display: flex;
+    justify-self: end;
+}
+.footer-social>li{
+    margin-left: 5px;
+}
+.footer-social>li>img{
+    width: 30px;
+    height: 30px;
+}
+.footer-contact{
+    justify-self: end;
+    width: 80%;
+    text-align: right;
+    line-height: 1.5;
+    margin-left: 10px;
+}
+
+
+.copyright{
+    font-size: 10px!important;
+    font-weight: 200;
+} 
